@@ -1,7 +1,7 @@
 // import { dirname } from "path";
 // import { fileURLToPath } from "url";
 // import { FlatCompat } from "@eslint/eslintrc";
-import spellcheck from "eslint-plugin-spellcheck";
+// import spellcheck from "eslint-plugin-spellcheck";
 
 
 // const __filename = fileURLToPath(import.meta.url);
@@ -48,37 +48,37 @@ export default [
     },
     plugins: {
       "@typescript-eslint": tseslint,
-      spellcheck,
+      // spellcheck,
     },
     rules: {
       "@typescript-eslint/no-unused-vars": "warn", // Example TypeScript rule
       "@typescript-eslint/explicit-module-boundary-types": "off",
-            "spellcheck/spell-checker": [
-        "warn", // Change to "error" if you want strict enforcement
-        {
-          comments: true,
-          strings: true,
-          identifiers: true,
-          lang: "en_US",
-         "skipWords": [
-          "antialiased",
-          "bg",
-          "2xl",
-          "3xl",
-          "6xl",
-          "mb"
-        ],
-        "skipIfMatch": [
-          "^bg-",
-          "^text-",
-          "^shadow-",
-          "^p-",
-          "^m-",
-          "^w-",
-          "^h-"
-        ],
-        },
-      ],
+      //       "spellcheck/spell-checker": [
+      //   "warn", // Change to "error" if you want strict enforcement
+      //   {
+      //     comments: true,
+      //     strings: true,
+      //     identifiers: true,
+      //     lang: "en_US",
+      //    "skipWords": [
+      //     "antialiased",
+      //     "bg",
+      //     "2xl",
+      //     "3xl",
+      //     "6xl",
+      //     "mb"
+      //   ],
+      //   "skipIfMatch": [
+      //     "^bg-",
+      //     "^text-",
+      //     "^shadow-",
+      //     "^p-",
+      //     "^m-",
+      //     "^w-",
+      //     "^h-"
+      //   ],
+      //   },
+      // ],
     },
   },
 ];
