@@ -30,11 +30,13 @@
     }
   },
   "include": [
-    "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
+    "next-env.d.ts",
+    // ".next/types/**/*.ts",
+    "postcss.config.js",
     ".next/types/**/*.ts"
-, "postcss.config.js"  ],
+  ],
   "exclude": [
     "node_modules"
   ]
